@@ -12,14 +12,23 @@ public class mineGui extends JFrame {
 
     private class Action implements ActionListener {
 	public void actionPerformed(ActionEvent event) {
+	    switch (event.getSource()) {
+		case "Start New Game":
+		    enterGame();
+		    break;
+		default:
+		    break;
+	    }
 	    System.out.println(event);
 	}
     }
     
     private class Key implements KeyListener {
 	public void keyPressed(KeyEvent event) {
+	    /*
 	    switch (event.getSource()):
 		case
+	    */
 	}
 	public void keyReleased(KeyEvent event) {
 	}
